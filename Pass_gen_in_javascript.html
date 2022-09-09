@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>pass_gen</title>
+</head>
+<body>
+	<button onclick="pass_gen()">Generate password</button>
+	<p id=pass_display></p>
+	<script type="text/javascript">
+		
+		var abc = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+
+		var caps = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
+		var password_raw = []
+		function pass_gen() {
+			for (let i = 0; i < 8; ++i){
+				let type = Math.floor(Math.random()*4)
+				if (type == 1) {
+				let random = Math.floor(Math.random() * abc.length);
+				password_raw[i] = abc[random];
+				}
+				if (type == 2) {
+				let random = Math.floor(Math.random() * caps.length);
+				password_raw[i] = caps[random];
+				}
+				if (type == 3) {
+				let random = Math.floor(Math.random() * 9);
+				password_raw[i] = random;
+				}
+			document.getElementById('pass_display').innerHTML = "Your password is "+password_raw.join('')
+
+
+			}
+		}
+		
+
+	</script>
+</body>
+</html>
