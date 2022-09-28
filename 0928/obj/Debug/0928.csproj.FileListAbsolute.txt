@@ -1,0 +1,7 @@
+C:\Users\sallai.robert\source\repos\0928\bin\Debug\0928.exe.config
+C:\Users\sallai.robert\source\repos\0928\bin\Debug\0928.exe
+C:\Users\sallai.robert\source\repos\0928\bin\Debug\0928.pdb
+C:\Users\sallai.robert\source\repos\0928\obj\Debug\0928.csproj.AssemblyReference.cache
+C:\Users\sallai.robert\source\repos\0928\obj\Debug\0928.csproj.CoreCompileInputs.cache
+C:\Users\sallai.robert\source\repos\0928\obj\Debug\0928.exe
+C:\Users\sallai.robert\source\repos\0928\obj\Debug\0928.pdb
